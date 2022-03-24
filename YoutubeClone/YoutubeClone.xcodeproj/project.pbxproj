@@ -13,6 +13,7 @@
 		07C8908727ECDC5300F5A8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C8908527ECDC5300F5A8CD /* Main.storyboard */; };
 		07C8908927ECDC5500F5A8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C8908827ECDC5500F5A8CD /* Assets.xcassets */; };
 		07C8908C27ECDC5500F5A8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C8908A27ECDC5500F5A8CD /* LaunchScreen.storyboard */; };
+		07C8909527ECE52100F5A8CD /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8909427ECE52100F5A8CD /* PlaylistModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		07C8908827ECDC5500F5A8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C8908B27ECDC5500F5A8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C8908D27ECDC5500F5A8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C8909427ECE52100F5A8CD /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		07C8907E27ECDC5300F5A8CD /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				07C8909327ECE4DE00F5A8CD /* Model */,
 				07C8907F27ECDC5300F5A8CD /* AppDelegate.swift */,
 				07C8908127ECDC5300F5A8CD /* SceneDelegate.swift */,
 				07C8908327ECDC5300F5A8CD /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				07C8908D27ECDC5500F5A8CD /* Info.plist */,
 			);
 			path = YoutubeClone;
+			sourceTree = "<group>";
+		};
+		07C8909327ECE4DE00F5A8CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07C8909427ECE52100F5A8CD /* PlaylistModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C8908427ECDC5300F5A8CD /* ViewController.swift in Sources */,
+				07C8909527ECE52100F5A8CD /* PlaylistModel.swift in Sources */,
 				07C8908027ECDC5300F5A8CD /* AppDelegate.swift in Sources */,
 				07C8908227ECDC5300F5A8CD /* SceneDelegate.swift in Sources */,
 			);
