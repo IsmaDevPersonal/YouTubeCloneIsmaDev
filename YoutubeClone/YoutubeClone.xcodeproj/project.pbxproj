@@ -29,6 +29,12 @@
 		07C890B527ED365000F5A8CD /* ChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C890B327ED365000F5A8CD /* ChannelViewController.xib */; };
 		07C890B827ED365C00F5A8CD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890B627ED365C00F5A8CD /* AboutViewController.swift */; };
 		07C890B927ED365C00F5A8CD /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C890B727ED365C00F5A8CD /* AboutViewController.xib */; };
+		07C890BC27ED3E4200F5A8CD /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890BB27ED3E4200F5A8CD /* ServiceLayer.swift */; };
+		07C890BE27ED3E6200F5A8CD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890BD27ED3E6200F5A8CD /* NetworkError.swift */; };
+		07C890C027ED3F0F00F5A8CD /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890BF27ED3F0F00F5A8CD /* RequestModel.swift */; };
+		07C890C327ED40C600F5A8CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890C227ED40C600F5A8CD /* Constants.swift */; };
+		07C890C927ED429A00F5A8CD /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890C827ED429A00F5A8CD /* HomeProvider.swift */; };
+		07C890CB27ED450800F5A8CD /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C890CA27ED450800F5A8CD /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		07C890B327ED365000F5A8CD /* ChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewController.xib; sourceTree = "<group>"; };
 		07C890B627ED365C00F5A8CD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		07C890B727ED365C00F5A8CD /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		07C890BB27ED3E4200F5A8CD /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		07C890BD27ED3E6200F5A8CD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		07C890BF27ED3F0F00F5A8CD /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		07C890C227ED40C600F5A8CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07C890C827ED429A00F5A8CD /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		07C890CA27ED450800F5A8CD /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,8 @@
 		07C8907E27ECDC5300F5A8CD /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				07C890C127ED40BA00F5A8CD /* Utils */,
+				07C890BA27ED3E0A00F5A8CD /* ServiceLayer */,
 				07C890A527ED360800F5A8CD /* About */,
 				07C890A427ED360100F5A8CD /* Channels */,
 				07C890A327ED35F900F5A8CD /* Playlist */,
@@ -129,8 +143,9 @@
 		07C890A127ED35DF00F5A8CD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				07C890A627ED362B00F5A8CD /* HomeViewController.swift */,
-				07C890A727ED362B00F5A8CD /* HomeViewController.xib */,
+				07C890C627ED427600F5A8CD /* Presenter */,
+				07C890C527ED426F00F5A8CD /* View */,
+				07C890C427ED426800F5A8CD /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -169,6 +184,57 @@
 				07C890B727ED365C00F5A8CD /* AboutViewController.xib */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		07C890BA27ED3E0A00F5A8CD /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				07C890BB27ED3E4200F5A8CD /* ServiceLayer.swift */,
+				07C890BD27ED3E6200F5A8CD /* NetworkError.swift */,
+				07C890BF27ED3F0F00F5A8CD /* RequestModel.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		07C890C127ED40BA00F5A8CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07C890C227ED40C600F5A8CD /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		07C890C427ED426800F5A8CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07C890C727ED428B00F5A8CD /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07C890C527ED426F00F5A8CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07C890A627ED362B00F5A8CD /* HomeViewController.swift */,
+				07C890A727ED362B00F5A8CD /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07C890C627ED427600F5A8CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				07C890CA27ED450800F5A8CD /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		07C890C727ED428B00F5A8CD /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				07C890C827ED429A00F5A8CD /* HomeProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,19 +314,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C8909927ED2C7C00F5A8CD /* PlaylistItemsModel.swift in Sources */,
+				07C890BE27ED3E6200F5A8CD /* NetworkError.swift in Sources */,
 				07C8908427ECDC5300F5A8CD /* ViewController.swift in Sources */,
+				07C890CB27ED450800F5A8CD /* HomePresenter.swift in Sources */,
 				07C890AC27ED363A00F5A8CD /* VideosViewController.swift in Sources */,
 				07C8909527ECE52100F5A8CD /* PlaylistModel.swift in Sources */,
 				07C890B027ED364600F5A8CD /* PlaylistsViewController.swift in Sources */,
+				07C890C027ED3F0F00F5A8CD /* RequestModel.swift in Sources */,
 				07C8908027ECDC5300F5A8CD /* AppDelegate.swift in Sources */,
 				07C8909727ED297900F5A8CD /* VideoModel.swift in Sources */,
 				07C890A827ED362B00F5A8CD /* HomeViewController.swift in Sources */,
 				07C8908227ECDC5300F5A8CD /* SceneDelegate.swift in Sources */,
+				07C890C927ED429A00F5A8CD /* HomeProvider.swift in Sources */,
 				07C890A027ED34E700F5A8CD /* MainViewController.swift in Sources */,
+				07C890BC27ED3E4200F5A8CD /* ServiceLayer.swift in Sources */,
 				07C890B827ED365C00F5A8CD /* AboutViewController.swift in Sources */,
 				07C890B427ED365000F5A8CD /* ChannelViewController.swift in Sources */,
 				07C8909B27ED2C9D00F5A8CD /* ChannelModel.swift in Sources */,
 				07C8909E27ED34D200F5A8CD /* RootPageViewController.swift in Sources */,
+				07C890C327ED40C600F5A8CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
