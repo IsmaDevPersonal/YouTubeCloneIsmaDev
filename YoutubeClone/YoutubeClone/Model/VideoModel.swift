@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - VideoModel
-struct VideosModel: Decodable {
+struct VideoModel: Decodable {
     let kind, etag: String
     let items: [Item]
     let pageInfo: PageInfo
@@ -23,24 +23,80 @@ struct VideosModel: Decodable {
     
     // MARK: - Item
     struct Item: Decodable {
-        let kind, etag, id: String
-        let snippet: Snippet
-        let contentDetails: ContentDetails
-        let status: Status
-        let statistics: Statistics
+        let kind : String
+        let id: String?
+        let snippet: Snippet?
+        let contentDetails: ContentDetails?
+        let statistics: Statistics?
         
-        let topicDetails: TopicDetails
+        
+        
+        enum CodingKeys : String, CodingKey{
+            case kind
+            case id
+            case snippet
+            case contentDetails
+            case statistics
+         
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            
+            self.kind = try container.decode(String.self, forKey: .kind)
+            
+            if let id = try? container.decode(VideoId.self, forKey: .id){
+                self.id = id.videoId
+            }else{
+                if let id = try? container.decode(String.self, forKey: .id){
+                    self.id = id
+                }else{
+                    self.id = nil
+                }
+                
+            }
+            
+            if let snippet = try? container.decode(Snippet.self, forKey: .snippet){
+                self.snippet = snippet
+            }else{
+                self.snippet = nil
+            }
+            
+            if let contentDetails = try? container.decode(ContentDetails.self, forKey: .contentDetails){
+                self.contentDetails = contentDetails
+            }else{
+                self.contentDetails = nil
+            }
+            
+            if let statistics = try? container.decode(Statistics.self, forKey: .statistics){
+                self.statistics = statistics
+            }else{
+                self.statistics = nil
+            }
+            
+            
+            
+            
+        }
+        
+        
+        
+        struct VideoId : Decodable{
+            let kind : String
+            let videoId : String
+        }
         
         // MARK: - Snippet
         struct Snippet: Decodable {
-            let publishedAt: Date
-            let channelId, title, description: String
+            let publishedAt: String
+            let channelId: String
+            let title: String
+            let description: String
             let thumbnails: Thumbnails
             let channelTitle: String
-            let tags: [String]
-            let categoryId, liveBroadcastContent: String
-            let localized: Localized
-            let defaultAudioLanguage: String
+            let tags: [String]?
+            
+            
             
             
             
@@ -50,33 +106,23 @@ struct VideosModel: Decodable {
                 case channelId
                 case title
                 case description
-                case thumbnails, channelTitle, tags
-                case categoryId
-                case liveBroadcastContent, localized, defaultAudioLanguage
+                case thumbnails
+                case channelTitle
+                case tags
+                
+                
             }
             
-            
-            
-            
-            // MARK: - Localized
-            struct Localized: Decodable {
-                let title, localizedDescription: String
-
-                enum CodingKeys: String, CodingKey {
-                    case title
-                    case localizedDescription = "description"
-                }
-            }
             
             
             
             // MARK: - Thumbnails
             struct Thumbnails: Decodable {
-                let thumbnailsDefault, medium, high: Default
+                let  medium, high: Default
 
                 enum CodingKeys: String, CodingKey {
-                    case thumbnailsDefault = "default"
-                    case medium, high
+                    case medium
+                    case high
                 }
                 
                 
@@ -105,17 +151,7 @@ struct VideosModel: Decodable {
         }
         
         
-        
-        // MARK: - Status
-        struct Status: Decodable {
-            let uploadStatus, privacyStatus, license: String
-            let embeddable, publicStatsViewable, madeForKids: Bool
-        }
-
-        // MARK: - TopicDetails
-        struct TopicDetails: Decodable {
-            let topicCategories: [String]
-        }
+    
         
     }
     
