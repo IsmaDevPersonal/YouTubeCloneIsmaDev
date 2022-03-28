@@ -1,0 +1,61 @@
+
+{
+    "kind": "youtube#channelListResponse",
+    "etag": "OtaGZIMaEvN-ORTnfnfACH5IBkk",
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#channel",
+            "etag": "CID1FM_GU6mkLgFQLgUXXayvEms",
+            "id": "UCxPD7bsocoAMq8Dj18kmGyQ",
+            "snippet": {
+                "title": "MoureDev by Brais Moure",
+                "description": "Si te interesa la INGENIERIA INFORMATICA y la PROGRAMACION, este es tu canal. Si quieres aprender programar apps para iOS (con Swift y Xcode) y Android (con Kotlin y Android Studio) espero poder ayudarte. \nTODAS las SEMANAS comparto nuevos tutoriales de programación, creando así un curso cada día más grande y para todos los niveles.\n\nHola Hackermen! 👋\nMi nombre es Brais Moure, soy desarrollador de software profesional desde hace más de 10 años. Actualmente trabajo como freelance creando apps para iOS y Android.\n\n¿Te unes a nuestra comunidad? \n\nBienvenid@ a MoureDev!",
+                "customUrl": "mouredevapps",
+                "publishedAt": "2014-07-06T15:43:32Z",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/ytc/AKedOLRyratMxgvHzoL-15qIZAGXjdALPmEe4jybJhd4MA=s88-c-k-c0x00ffffff-no-rj",
+                        "width": 88,
+                        "height": 88
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/ytc/AKedOLRyratMxgvHzoL-15qIZAGXjdALPmEe4jybJhd4MA=s240-c-k-c0x00ffffff-no-rj",
+                        "width": 240,
+                        "height": 240
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/ytc/AKedOLRyratMxgvHzoL-15qIZAGXjdALPmEe4jybJhd4MA=s800-c-k-c0x00ffffff-no-rj",
+                        "width": 800,
+                        "height": 800
+                    }
+                },
+                "localized": {
+                    "title": "MoureDev by Brais Moure",
+                    "description": "Si te interesa la INGENIERIA INFORMATICA y la PROGRAMACION, este es tu canal. Si quieres aprender programar apps para iOS (con Swift y Xcode) y Android (con Kotlin y Android Studio) espero poder ayudarte. \nTODAS las SEMANAS comparto nuevos tutoriales de programación, creando así un curso cada día más grande y para todos los niveles.\n\nHola Hackermen! 👋\nMi nombre es Brais Moure, soy desarrollador de software profesional desde hace más de 10 años. Actualmente trabajo como freelance creando apps para iOS y Android.\n\n¿Te unes a nuestra comunidad? \n\nBienvenid@ a MoureDev!"
+                },
+                "country": "ES"
+            },
+            "statistics": {
+                "viewCount": "8667325",
+                "subscriberCount": "205000",
+                "hiddenSubscriberCount": false,
+                "videoCount": "246"
+            },
+            "brandingSettings": {
+                "channel": {
+                    "title": "MoureDev by Brais Moure",
+                    "description": "Si te interesa la INGENIERIA INFORMATICA y la PROGRAMACION, este es tu canal. Si quieres aprender programar apps para iOS (con Swift y Xcode) y Android (con Kotlin y Android Studio) espero poder ayudarte. \nTODAS las SEMANAS comparto nuevos tutoriales de programación, creando así un curso cada día más grande y para todos los niveles.\n\nHola Hackermen! 👋\nMi nombre es Brais Moure, soy desarrollador de software profesional desde hace más de 10 años. Actualmente trabajo como freelance creando apps para iOS y Android.\n\n¿Te unes a nuestra comunidad? \n\nBienvenid@ a MoureDev!",
+                    "keywords": "xcode swift \"android studio\" kotlin \"ingenieria informatica\" \"ingeniería informática\" programacion programación \"aprender a programar\" \"aprender programacion\" \"como aprender a programar\" \"tutorial programacion\" \"tutorial xcode\" \"tutorial swift\" \"tutorial android studio\" \"tutorial kotlin\" \"swift desde cero\" \"kotlin desde cero\" \"como crear aplicaciones\" \"ingenieria de software\" \"como aprender a programar\" \"xcode app\" \"programacion desde cero\" \"tutorial programacion\" \"como crear una app\"",
+                    "country": "ES"
+                },
+                "image": {
+                    "bannerExternalUrl": "https://yt3.ggpht.com/bLddxmhIL0SacFm5wDcHCgy2c_zXMutEqtL_DB-IKDxhCufUrR4S0VoMctbxmEDKWuqW6aWJC8c"
+                }
+            }
+        }
+    ]
+}

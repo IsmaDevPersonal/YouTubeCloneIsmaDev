@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076CFF1C27F141EA009214A0 /* HomeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CFF1B27F141EA009214A0 /* HomeProviderMock.swift */; };
+		076CFF1F27F1423A009214A0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CFF1E27F1423A009214A0 /* Utils.swift */; };
+		076CFF2327F1440D009214A0 /* Playlists.json in Resources */ = {isa = PBXBuildFile; fileRef = 076CFF2227F1440D009214A0 /* Playlists.json */; };
+		076CFF2527F14426009214A0 /* PlaylistItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 076CFF2427F14426009214A0 /* PlaylistItems.json */; };
+		076CFF2727F1443F009214A0 /* SearchVideos.json in Resources */ = {isa = PBXBuildFile; fileRef = 076CFF2627F1443F009214A0 /* SearchVideos.json */; };
+		076CFF2927F1451C009214A0 /* Channel.json in Resources */ = {isa = PBXBuildFile; fileRef = 076CFF2827F1451C009214A0 /* Channel.json */; };
+		076CFF2B27F14551009214A0 /* VideoOnlyOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 076CFF2A27F14551009214A0 /* VideoOnlyOne.json */; };
+		076CFF2D27F147E0009214A0 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CFF2C27F147E0009214A0 /* MockManager.swift */; };
 		07C8908027ECDC5300F5A8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8907F27ECDC5300F5A8CD /* AppDelegate.swift */; };
 		07C8908227ECDC5300F5A8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8908127ECDC5300F5A8CD /* SceneDelegate.swift */; };
 		07C8908427ECDC5300F5A8CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8908327ECDC5300F5A8CD /* ViewController.swift */; };
@@ -38,6 +46,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		076CFF1B27F141EA009214A0 /* HomeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProviderMock.swift; sourceTree = "<group>"; };
+		076CFF1E27F1423A009214A0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		076CFF2227F1440D009214A0 /* Playlists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Playlists.json; sourceTree = "<group>"; };
+		076CFF2427F14426009214A0 /* PlaylistItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlaylistItems.json; sourceTree = "<group>"; };
+		076CFF2627F1443F009214A0 /* SearchVideos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchVideos.json; sourceTree = "<group>"; };
+		076CFF2827F1451C009214A0 /* Channel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channel.json; sourceTree = "<group>"; };
+		076CFF2A27F14551009214A0 /* VideoOnlyOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoOnlyOne.json; sourceTree = "<group>"; };
+		076CFF2C27F147E0009214A0 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
 		07C8907C27ECDC5300F5A8CD /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C8907F27ECDC5300F5A8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C8908127ECDC5300F5A8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076CFF1D27F1422B009214A0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				076CFF2227F1440D009214A0 /* Playlists.json */,
+				076CFF2427F14426009214A0 /* PlaylistItems.json */,
+				076CFF2627F1443F009214A0 /* SearchVideos.json */,
+				076CFF2827F1451C009214A0 /* Channel.json */,
+				076CFF2A27F14551009214A0 /* VideoOnlyOne.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		07C8907327ECDC5300F5A8CD = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +227,10 @@
 		07C890C127ED40BA00F5A8CD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				076CFF1D27F1422B009214A0 /* Mock */,
 				07C890C227ED40C600F5A8CD /* Constants.swift */,
+				076CFF1E27F1423A009214A0 /* Utils.swift */,
+				076CFF2C27F147E0009214A0 /* MockManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				07C890C827ED429A00F5A8CD /* HomeProvider.swift */,
+				076CFF1B27F141EA009214A0 /* HomeProviderMock.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -296,13 +328,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C890B127ED364600F5A8CD /* PlaylistsViewController.xib in Resources */,
+				076CFF2927F1451C009214A0 /* Channel.json in Resources */,
+				076CFF2727F1443F009214A0 /* SearchVideos.json in Resources */,
 				07C8908C27ECDC5500F5A8CD /* LaunchScreen.storyboard in Resources */,
 				07C890B927ED365C00F5A8CD /* AboutViewController.xib in Resources */,
+				076CFF2527F14426009214A0 /* PlaylistItems.json in Resources */,
+				076CFF2B27F14551009214A0 /* VideoOnlyOne.json in Resources */,
 				07C8908927ECDC5500F5A8CD /* Assets.xcassets in Resources */,
 				07C890AD27ED363A00F5A8CD /* VideosViewController.xib in Resources */,
 				07C8908727ECDC5300F5A8CD /* Main.storyboard in Resources */,
 				07C890A927ED362B00F5A8CD /* HomeViewController.xib in Resources */,
 				07C890B527ED365000F5A8CD /* ChannelViewController.xib in Resources */,
+				076CFF2327F1440D009214A0 /* Playlists.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +356,12 @@
 				07C890CB27ED450800F5A8CD /* HomePresenter.swift in Sources */,
 				07C890AC27ED363A00F5A8CD /* VideosViewController.swift in Sources */,
 				07C8909527ECE52100F5A8CD /* PlaylistModel.swift in Sources */,
+				076CFF1C27F141EA009214A0 /* HomeProviderMock.swift in Sources */,
+				076CFF1F27F1423A009214A0 /* Utils.swift in Sources */,
 				07C890B027ED364600F5A8CD /* PlaylistsViewController.swift in Sources */,
 				07C890C027ED3F0F00F5A8CD /* RequestModel.swift in Sources */,
 				07C8908027ECDC5300F5A8CD /* AppDelegate.swift in Sources */,
+				076CFF2D27F147E0009214A0 /* MockManager.swift in Sources */,
 				07C8909727ED297900F5A8CD /* VideoModel.swift in Sources */,
 				07C890A827ED362B00F5A8CD /* HomeViewController.swift in Sources */,
 				07C8908227ECDC5300F5A8CD /* SceneDelegate.swift in Sources */,
